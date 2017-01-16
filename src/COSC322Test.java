@@ -8,19 +8,24 @@ import ygraphs.ai.smart_fox.games.GamePlayer;
 /**
  * An example showing how to implement a GamePlayer 
  * @author yongg
+ * Student editors 
+ * @author Richard
+ * @author Vic
+ * @author Brian
  */
 public class COSC322Test extends GamePlayer{
 
     private GameClient gameClient;
 	
-    private String userName = null;
- 
+    private static String userName = "cosc322";
+    private static String password = "cosc322";
+    
 	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {				 
-		 COSC322Test player_01 = new COSC322Test(args[0], args[1]);  		 
+		 COSC322Test player_01 = new COSC322Test(userName,password);  		 
 	}
 	
 	/**
