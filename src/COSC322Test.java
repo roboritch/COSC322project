@@ -55,6 +55,14 @@ public class COSC322Test extends GamePlayer{
 	@Override
 	public void onLogin() {
 		System.out.println("I am called because the server said I am logged in successfully");
+		//printing available room list
+		ArrayList<String> roomList = gameClient.getRoomList();
+		System.out.println("\nroom List:");
+		for(String x: roomList){
+			System.out.println(x);			
+		}
+		System.out.println("room list end\n");
+		
 	}
 
 }
